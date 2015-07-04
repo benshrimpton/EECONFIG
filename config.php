@@ -34,8 +34,14 @@ $config['theme_folder_path'] = '/var/www/public_html/themes/';	//add server path
 //Template Preferences
 $config['tmpl_file_basepath'] = '/var/www/public_html/templates'; //add server path, required by system
 
-
-  
+//file uplaod dirs
+$config['upload_preferences'] = array(
+    1 => array(                                                            // ID of upload destination
+        'name'        => 'Staging Image Uploads',                          // Display name in control panel
+        'server_path' => '/home/user/example.com/staging/images/uploads/', // Server path to upload directory
+        'url'         => 'http://staging.example.com/images/uploads/'      // URL of upload directory
+    )
+);  
   
   
   
